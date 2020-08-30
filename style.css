@@ -321,7 +321,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 #researches .research-item {
   flex-basis: 80%;
@@ -352,7 +352,7 @@ p {
 #researches .research-bottom .icon {
   height: 60px;
   width: 60px;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 }
 #researches .research-item h2 {
   font-size: 2rem;
@@ -380,7 +380,7 @@ p {
   padding: 100px 0;
 }
 #interests .interests-header h1 {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 #interests .all-interests {
   display: flex;
