@@ -346,7 +346,7 @@ p {
   height: 100%;
   width: 100%;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  opacity: 0.8;
+  opacity: 0.65;
   z-index: -1;
 }
 #researches .research-bottom .icon {
@@ -379,9 +379,11 @@ p {
   margin: 0 auto;
   padding: 100px 0;
 }
-#interests .interests-header h1 {
-  /* margin-bottom: 50px; */
-}
+
+/* #interests .interests-header h1 {
+  margin-bottom: 50px;
+} */
+
 #interests .all-interests {
   display: flex;
   align-items: center;
@@ -412,6 +414,7 @@ p {
 #interests .interest-info h1 {
   font-size: 3rem;
   font-weight: 500;
+  color: crimson;
 }
 #interests .interest-info h2 {
   font-size: 1.8rem;
