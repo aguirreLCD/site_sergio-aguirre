@@ -454,7 +454,7 @@ p {
 }
 #contact .contact-item {
   width: 80%;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   border-radius: 10px;
   padding: 30px;
@@ -498,7 +498,7 @@ p {
 #footer .footer {
   min-height: 200px;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 #footer h2 {
