@@ -308,12 +308,12 @@ p {
 #researches .researches {
   flex-direction: column;
   text-align: center;
-  max-width: 1500px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 100px 0;
 }
 #researches .research-top {
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto;
 }
 #researches .research-bottom {
@@ -321,7 +321,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  /* margin-top: 50px; */
+  margin-top: 10px;
 }
 #researches .research-item {
   flex-basis: 80%;
@@ -329,13 +329,13 @@ p {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  padding: 30px;
+  padding: 20px;
   border-radius: 10px;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 
-  background-image: url(./img/botoes.jpg);
-  background-size: contain;
-  opacity: 0.7;
+  background-image: url(./img/cabos.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
   margin: 10px 5%;
   position: relative;
@@ -343,13 +343,15 @@ p {
   overflow: hidden;
 }
 
-/* #researches .research-item img { */
-/* object-fit: cover; */
-/* border-radius: 15px; */
-/* overflow: hidden; */
-/* position: relative; */
-/* background-size: cover; */
-/* } */
+#researches .research-item img {
+  opacity: 0.9;
+
+  /* object-fit: cover; */
+  /* border-radius: 15px; */
+  /* overflow: hidden; */
+  /* position: relative; */
+  /* background-size: cover; */
+}
 
 #researches .research-item::after {
   content: "";
@@ -358,21 +360,24 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  opacity: 0.65;
+  background-image: linear-gradient(60deg, #29323c 20%, #485563 80%);
+  /* background-image: url(./img/cabos.jpg); */
+  /* background-size: cover; */
+  opacity: 0.5;
   z-index: -1;
 }
 #researches .research-bottom .icon {
-  height: 60px;
-  width: 60px;
-  /* margin-bottom: 5px; */
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px;
 }
 #researches .research-item h2 {
-  font-size: 2.2rem;
-  color: black;
+  font-size: 1.5rem;
+  color: crimson;
   font-weight: 500;
   margin-bottom: 5px;
   text-transform: uppercase;
+  text-align: left;
 }
 #researches .research-item p {
   color: white;
