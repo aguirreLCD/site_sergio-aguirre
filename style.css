@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 .container {
-  min-height: 100vh;
+  min-height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -196,7 +196,9 @@ p {
   top: 0;
 }
 
+/* home */
 #home {
+  height: 100vh;
   background-image: url(./img/lindoo.jpg);
   background-size: cover;
   background-position: top center;
@@ -259,12 +261,13 @@ p {
   animation-delay: 2.5s;
 }
 
+/* about */
 #about .about {
   flex-direction: column-reverse;
-  text-align: center;
-  max-width: 1250px;
+  /* text-align: center; */
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 80px 10px;
+  padding: 100px 0;
 }
 #about .col-left {
   width: 250px;
@@ -280,13 +283,16 @@ p {
   margin-bottom: 10px;
 }
 #about .col-right p {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+  text-align: left;
+  padding: 10px;
 }
 #about .col-right .cta {
   color: black;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   padding: 10px 20px;
   font-size: 2rem;
+  margin-left: 10px;
 }
 #about .col-left .about-img {
   height: 100%;
@@ -305,10 +311,12 @@ p {
   z-index: -1;
 }
 
+/* research experience */
+
 #researches .researches {
   flex-direction: column;
-  text-align: center;
-  max-width: 1400px;
+  /* text-align: center; */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 100px 0;
 }
@@ -321,17 +329,18 @@ p {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 10px;
+  /* margin-top: 0 auto; */
 }
 #researches .research-item {
+  width: 100vw;
   flex-basis: 80%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 20px;
   border-radius: 10px;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  /* background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
 
   background-image: url(./img/cabos.jpg);
   background-size: cover;
@@ -343,16 +352,6 @@ p {
   overflow: hidden;
 }
 
-#researches .research-item img {
-  opacity: 0.9;
-
-  /* object-fit: cover; */
-  /* border-radius: 15px; */
-  /* overflow: hidden; */
-  /* position: relative; */
-  /* background-size: cover; */
-}
-
 #researches .research-item::after {
   content: "";
   position: absolute;
@@ -360,10 +359,10 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(60deg, #29323c 20%, #485563 80%);
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   /* background-image: url(./img/cabos.jpg); */
   /* background-size: cover; */
-  opacity: 0.5;
+  opacity: 0.8;
   z-index: -1;
 }
 #researches .research-bottom .icon {
@@ -378,6 +377,7 @@ p {
   margin-bottom: 5px;
   text-transform: uppercase;
   text-align: left;
+  opacity: 1;
 }
 #researches .research-item p {
   color: white;
@@ -393,16 +393,14 @@ p {
   filter: grayscale(1);
 }
 
+/* research interests */
+
 #interests .interests {
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px 0;
 }
-
-/* #interests .interests-header h1 {
-  margin-bottom: 50px;
-} */
 
 #interests .all-interests {
   display: flex;
@@ -467,25 +465,39 @@ p {
   transform: scale(1.1);
 }
 
+/* contact */
+
 #contact .contact {
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 80px 0;
 }
+
+#contact .contact-header h1 {
+  padding: 5px;
+}
+
 #contact .contact-items {
-  width: 400px;
-}
-#contact .contact-item {
-  width: 80%;
-  padding: 10px;
-  text-align: center;
-  border-radius: 10px;
-  padding: 30px;
-  margin: 30px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
+}
+
+#contact .contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 10px 10px;
+  overflow: hidden;
+  border-radius: 10px;
+
+  text-align: center;
+  padding: 30px;
   box-shadow: 0px 0px 18px 0 #0000002c;
   transition: 0.3s ease box-shadow;
 }
@@ -493,7 +505,7 @@ p {
   box-shadow: 0px 0px 5px 0 #0000002c;
 }
 #contact .icon {
-  width: 70px;
+  /* width: 70px; */
   margin: 0 auto;
   margin-bottom: 10px;
 }
@@ -502,32 +514,38 @@ p {
   font-weight: 500;
   margin-bottom: 5px;
   color: crimson;
+  text-align: center;
 }
 #contact .contact-info h1 a {
   font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 5px;
   color: crimson;
+  text-align: center;
 }
 #contact .contact-info h2 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 500;
+  text-align: center;
 }
+
+/* footer */
 
 #footer {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  margin: 0 auto;
 }
 #footer .footer {
-  min-height: 200px;
+  /* min-height: 200px; */
   flex-direction: column;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
 }
 #footer h2 {
   color: white;
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   letter-spacing: 0.1rem;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -535,7 +553,7 @@ p {
 }
 #footer .social-icon {
   display: flex;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 /* #footer .social-item {
   height: 50px;
@@ -551,7 +569,7 @@ p {
 } */
 #footer p {
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 
@@ -643,40 +661,18 @@ p {
     text-align: left;
     padding: 30px;
   }
+
   #about .col-right h1 {
     text-align: left;
   }
 
-  #contact .contact {
-    flex-direction: column;
-    padding: 100px 0;
-    align-items: center;
-    justify-content: center;
-    min-width: 20vh;
-  }
   #contact .contact-items {
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0;
-  }
-  #contact .contact-item {
-    width: 30%;
-    margin: 0;
-    flex-direction: row;
-  }
-  #contact .contact-item .icon {
-    height: 100px;
-    width: 100px;
-  }
-  #contact .contact-item .icon img {
-    object-fit: contain;
-  }
-  #contact .contact-item .contact-info {
-    width: 100%;
-    text-align: left;
-    padding-left: 20px;
   }
 }
 
@@ -702,7 +698,7 @@ p {
   }
 
   #researches .research-bottom .research-item {
-    flex-basis: 22%;
+    flex-basis: 25%;
     margin: 1.5%;
   }
 }
