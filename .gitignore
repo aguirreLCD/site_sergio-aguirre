@@ -8,3 +8,11 @@ DS_Store
 .DS_Store/
 
 /DS_Store
+
+.gitignore/
+
+/.gitignore
+/gitignore
+
+.vscode/
+/.vscode
