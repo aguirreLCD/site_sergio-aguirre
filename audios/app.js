@@ -29,7 +29,7 @@ const app = () => {
   sounds.forEach(sound => {
     sound.addEventListener("click", function() {
       song.src = this.getAttribute("data-sound");
-      audio.src = this.getAttribute("data-sound");
+      // audio.src = this.getAttribute("data-sound");
       checkPlaying(song);
     });
   });
