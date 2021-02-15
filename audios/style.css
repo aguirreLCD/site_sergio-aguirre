@@ -1,9 +1,10 @@
 .jumbotron {
-  background-image: url("/audios/svg/welcome.jpg");
+  background-image: url("/img/medidor.jpg");
   background-size: cover !important;
   height: 200px;
   background-position: center;
-  max-width: 100%;
+  /* max-width: 100%; */
+  width: auto;
   background-repeat: no-repeat;
   text-align: center;
 }
