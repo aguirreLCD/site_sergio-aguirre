@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+    <title>Audios</title>
+    
+  </head>
+    
+  <body>
+      <!-- header -->
+      <div class="jumbotron text-center" style="margin-bottom:0 ">
+        <h1 class="font-weight-bold text-center text-white display-4">Audios</h1>
+      </div>
+    
+      <!-- navbar -->
+      <!-- <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" target="_blank" href="#">
+        </a>
+    
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ">
+            <li class="nav-item ">
+              <a class="nav-link text-white" href="#">Audio1</a>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Audio2</a>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Audio3</a>
+            </li>
+    
+          </ul>
+        </div>
+      </nav> -->
+      <!-- end navbar -->
+
+      <!-- sound-picker -->
+    <div class="container">
+      <div class="sound-picker">
+
+        <button class="list-group-item list-group-item-action" data-sound="./sounds/01.wav" aria-current="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-soundwave"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
+          </svg>  Phrase Dry</button>
+      
+          <button class="list-group-item list-group-item-action" data-sound="./sounds/02.wav">
+          <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-soundwave"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
+          </svg>  Phrase Rev</button>
+        
+            <button class="list-group-item list-group-item-action" data-sound="./sounds/beach.mp3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-soundwave"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
+            </svg>  Audio....</button>
+        
+            <button class="list-group-item list-group-item-action" data-sound="./sounds/spring-forest-birds-sounds.mp3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-soundwave"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
+          </svg>  Audio....</button>
+
+            <button class="list-group-item list-group-item-action" data-sound="./sounds/rain.mp3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-soundwave"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
+              </svg>  Audio....</button>
+          
+          <div class="audio-container">
+              <audio loop="loop"></audio>
+            </div>
+
+
+        </div>
+      </div>
+
+    <!-- player-container -->
+    <div class="container">
+      <div class="player-container">
+        <audio class="song">
+          <source src="./sounds/spring-forest-birds-sounds.mp3"/>
+        </audio>
+        
+        <img src="./svg/play.svg" alt="play" class="play"/>
+
+        <svg class="track-outline" width="453" height="453" viewbox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+        </svg>
+
+        <svg class="moving-outline" width="453" height="453" viewbox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+        </svg>
+
+        <img src="./svg/replay.svg" class="replay "/>
+
+        <h3 class="time-display text-center">0:00</h3>
+
+      </div>
+      </div>
+
+
+
+    <script src="./app.js"></script>
+  </body>
+
+</html>
