@@ -25,6 +25,16 @@
         <h1 class="font-weight-bold text-center text-white display-5">Binaural  Comparison</h1>
       </div>
 
+      <!-- player -->
+      <div class="card text-center sticky-top">
+        <div class="card-body">
+          <h5 class="card-title">
+            <audio controls class="song play">
+            </audio>
+          </h5>
+        </div>
+      </div>
+
       <!-- sound-picker -->
     <div class="container">
       <div class="sound-picker">
@@ -32,16 +42,21 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100">
-              <img src="/audios/svg/arch_Ambisonics.png" class="card-img-top" alt="...">
+              <img src="/audios/svg/arch_Ambisonics.png" class="card-img-top" alt="Ambisonics">
+              
               <div class="card-body">
-                <!-- <h5 class="card-title">Card title</h5> -->
+                <h5 class="card-title text-center">24 Loudspeakers</h5>
+                
                 <p class="card-text">
                 <button class="list-group-item list-group-item-action" data-sound="./sounds/AMB_1.wav" aria-current="true">
                   <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-soundwave"
                     viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
                       d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
-                  </svg> Left</button>
+                  </svg> Left
+                
+                
+                </button>
                 
                 </p>
 
@@ -52,9 +67,8 @@
                       <path fill-rule="evenodd"
                         d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
                     </svg> Front-left</button>
-                  
-                  
                 </p>
+
                 <p>
                   <button class="list-group-item list-group-item-action" data-sound="./sounds/AMB_3.wav">
                     <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-soundwave"
@@ -63,7 +77,6 @@
                         d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
                     </svg> Front</button>
                 </p>
-
 
                 <p>
                   <button class="list-group-item list-group-item-action" data-sound="./sounds/AMB_4.wav">
@@ -74,7 +87,6 @@
                     </svg> Front-right</button>
                 </p>
 
-
                 <p>
                   <button class="list-group-item list-group-item-action" data-sound="./sounds/AMB_5.wav">
                     <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-soundwave"
@@ -83,7 +95,6 @@
                         d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
                     </svg> Right</button>
                 </p>
-
 
                 <p>
                   <button class="list-group-item list-group-item-action" data-sound="./sounds/AMB_6.wav">
@@ -94,7 +105,6 @@
                     </svg> Left</button>
                 </p>
 
-
                 <p>
                   <button class="list-group-item list-group-item-action" data-sound="./sounds/AMB_7.wav">
                     <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-soundwave"
@@ -103,7 +113,6 @@
                         d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
                     </svg> Front-left</button>
                 </p>
-
 
                 <p>
                   <button class="list-group-item list-group-item-action" data-sound="./sounds/AMB_8.wav">
@@ -114,7 +123,6 @@
                     </svg> Front</button>
                 </p>
 
-
                 <p>
                   <button class="list-group-item list-group-item-action" data-sound="./sounds/AMB_9.wav">
                     <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-soundwave"
@@ -123,7 +131,6 @@
                         d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
                     </svg> Front-right</button>
                 </p>
-
 
                 <p>
                   <button class="list-group-item list-group-item-action" data-sound="./sounds/AMB_10.wav">
@@ -134,8 +141,6 @@
                     </svg> Right</button>
                 </p>
 
-
-
               </div>
               <div class="card-footer">
                 <small class="text-muted">Last updated 3 mins ago</small>
@@ -144,9 +149,9 @@
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="/audios/svg/arch_Hybrid.png" class="card-img-top" alt="...">
+              <img src="/audios/svg/arch_Hybrid.png" class="card-img-top" alt="Hybrid">
               <div class="card-body">
-                <!-- <h5 class="card-title">Card title</h5> -->
+                <h5 class="card-title text-center">4 Loudspeakers</h5>
                 
                 <p class="card-text">
                   <button class="list-group-item list-group-item-action" data-sound="./sounds/HYB_1.wav" aria-current="true">
@@ -155,7 +160,6 @@
                       <path fill-rule="evenodd"
                         d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
                     </svg> Left</button>
-                
                 </p>
                 
                 <p>
@@ -166,6 +170,7 @@
                         d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
                     </svg> Front-left</button>
                 </p>
+
                 <p>
                   <button class="list-group-item list-group-item-action" data-sound="./sounds/HYB_3.wav">
                     <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-soundwave"
@@ -184,7 +189,6 @@
                     </svg> Front-right</button>
                 </p>
 
-
                 <p>
                   <button class="list-group-item list-group-item-action" data-sound="./sounds/HYB_5.wav">
                     <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-soundwave"
@@ -193,7 +197,6 @@
                         d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
                     </svg> Right</button>
                 </p>
-
 
                 <p>
                   <button class="list-group-item list-group-item-action" data-sound="./sounds/HYB_6.wav">
@@ -204,7 +207,6 @@
                     </svg> Left</button>
                 </p>
 
-
                 <p>
                   <button class="list-group-item list-group-item-action" data-sound="./sounds/HYB_7.wav">
                     <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-soundwave"
@@ -213,7 +215,6 @@
                         d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
                     </svg> Front-left</button>
                 </p>
-
 
                 <p>
                   <button class="list-group-item list-group-item-action" data-sound="./sounds/HYB_8.wav">
@@ -224,8 +225,6 @@
                     </svg> Front</button>
                 </p>
 
-
-
                 <p>
                   <button class="list-group-item list-group-item-action" data-sound="./sounds/HYB_9.wav">
                     <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-soundwave"
@@ -234,8 +233,6 @@
                         d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
                     </svg> Front-right</button>
                 </p>
-
-
 
                 <p>
                   <button class="list-group-item list-group-item-action" data-sound="./sounds/HYB_10.wav">
@@ -246,7 +243,6 @@
                     </svg> Right</button>
                 </p>
 
-
               </div>
               <div class="card-footer">
                 <small class="text-muted">Last updated 3 mins ago</small>
@@ -255,9 +251,9 @@
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="/audios/svg/arch_Reference.png" class="card-img-top" alt="...">
+              <img src="/audios/svg/arch_Reference.png" class="card-img-top" alt="Reference">
               <div class="card-body">
-                <!-- <h5 class="card-title">Card title</h5> -->
+                <h5 class="card-title text-center">24 Loudspeakers</h5>
                 <p class="card-text">
                   <button class="list-group-item list-group-item-action" data-sound="./sounds/REF_1.wav" aria-current="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-soundwave"
@@ -265,7 +261,6 @@
                       <path fill-rule="evenodd"
                         d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
                     </svg> Left</button>
-                
                 </p>
                 
                 <p>
@@ -275,8 +270,6 @@
                       <path fill-rule="evenodd"
                         d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
                     </svg> Front-left</button>
-                
-                
                 </p>
 
                 <p>
@@ -288,7 +281,6 @@
                     </svg> Front</button>
                 </p>
 
-
                 <p>
                   <button class="list-group-item list-group-item-action" data-sound="./sounds/REF_4.wav">
                     <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-soundwave"
@@ -297,7 +289,6 @@
                         d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
                     </svg> Front-right</button>
                 </p>
-
 
                 <p>
                   <button class="list-group-item list-group-item-action" data-sound="./sounds/REF_5.wav">
@@ -308,8 +299,6 @@
                     </svg> Right</button>
                 </p>
 
-
-               
               </div>
               <div class="card-footer">
                 <small class="text-muted">Last updated 3 mins ago</small>
@@ -318,40 +307,8 @@
           </div>
         </div>
 
-
-          <div class="audio-container">
-              <audio loop="loop"></audio>
-            </div>
-
-
         </div>
-      </div>
-
-    <!-- player-container -->
-    <div class="container">
-      <div class="player-container">
-        <audio class="song">
-          <!-- <source src="./sounds/spring-forest-birds-sounds.mp3"/> -->
-        </audio>
-        
-        <img src="./svg/play.svg" alt="play" class="play"/>
-
-        <svg class="track-outline" width="453" height="453" viewbox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
-        </svg>
-
-        <svg class="moving-outline" width="453" height="453" viewbox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
-        </svg>
-
-        <img src="./svg/replay.svg" class="replay "/>
-
-        <h3 class="time-display text-center">0:00</h3>
-
-      </div>
-      </div>
-
-
+    </div>
 
     <script src="./app.js"></script>
   </body>
