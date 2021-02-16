@@ -6,6 +6,7 @@
   width: auto;
   background-repeat: no-repeat;
   text-align: center;
+  text-shadow: black 3px 3px;
 }
 
 .sound-picker button:nth-child(1) {
